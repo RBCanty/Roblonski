@@ -1,0 +1,8 @@
+{
+  "pos_1_rack": {
+    "A1": "Mixture(name='Stock', roles=Role(analyte), solutes=(SoluteChemical(name='Ir(ppy)3', role=Role(photo-species), loading=15.0, purity=99.98, molar_mass=450.0)), solvents=(SolventChemical(name='ACN', volume_ml=1.5, roles=Role(solvent))), volume=1.5)",
+    "A2": "Mixture(name='dil_1', roles=Role(analyte), solutes=(SoluteChemical(name='Ir(ppy)3', role=Role(photo-species), loading=4.999999999999999, purity=99.98, molar_mass=450.0)), solvents=(SolventChemical(name='ACN', volume_ml=1.5, roles=Role(solvent))), volume=1.5)",
+    "A3": "Mixture(name='dil_2', roles=Role(analyte), solutes=(SoluteChemical(name='Ir(ppy)3', role=Role(photo-species), loading=1.6666666666666665, purity=99.98, molar_mass=450.0)), solvents=(SolventChemical(name='ACN', volume_ml=1.5, roles=Role(solvent))), volume=1.5)",
+    "A4": "Mixture(name='dil_3', roles=Role(analyte), solutes=(SoluteChemical(name='Ir(ppy)3', role=Role(photo-species), loading=0.5555555555555555, purity=99.98, molar_mass=450.0)), solvents=(SolventChemical(name='ACN', volume_ml=1.5, roles=Role(solvent))), volume=1.5)"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "access_height": 31.62,
+  "base_offset": 1,
+  "volumetric_height": 25,
+  "volumetric_diameter": 0,
+  "access_diameter": 6.2,
+  "meta_data": {
+    "Type": "GC Vial (Part No. ###)",
+    "cap": false
+  }
+}

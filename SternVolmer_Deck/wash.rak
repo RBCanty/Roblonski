@@ -1,0 +1,10 @@
+{
+  "rack_pos_x_spacing": 0,
+  "rack_pos_y_spacing": 0,
+  "num_rows": 1,
+  "num_cols": 1,
+  "base_z_height": 0,
+  "origin_x": 100,
+  "origin_y": 160,
+  "travel_z_height": 105
+}

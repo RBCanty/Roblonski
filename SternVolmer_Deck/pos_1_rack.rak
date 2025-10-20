@@ -1,0 +1,13 @@
+{
+  "rack_pos_x_spacing": 18,
+  "rack_pos_y_spacing": 13.73333333,
+  "num_rows": 16,
+  "num_cols": 4,
+  "base_z_height": 80.2,
+  "origin_x": 9,
+  "origin_y": 41,
+  "travel_z_height": 113,
+  "meta_data": {
+    "Type": "Gilson 338S"
+  }
+}
