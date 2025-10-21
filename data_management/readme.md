@@ -1,5 +1,5 @@
 ## Overview ##
-These files concerning the handling of data files in the file system and the processioning of numerical data.
+These files concern the handling of data files in the file system and the processioning of numerical data.
 For other spectral data-processing see the aux_devices folder (general) and the workflows folder 
 (workflow-specific).
 
