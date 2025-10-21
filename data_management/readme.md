@@ -37,9 +37,9 @@ saves files in the format "example__timestamp_spectralmode_i#" where timestamp i
 caller-specified number.
 
 ### common_dp_steps.py ###
-This file provides three resources: a means to grab all files in a directory (```os.walk(...)```) with the option to 
-only include files who name contains a specified substring (```get_files(directory, key)```), a data structure to
-organize the specifications for how spectra are to be analyzed as a single number (SpectralProcessingSpec), 
+This file provides three resources: a means to grab all files in a directory with the option to 
+only include files who name contains a specified substring, a data structure to
+organize the specifications for how spectra are to be analyzed as a single number, 
 and common methods for converting a spectrum into a single number.
 
 ```get_files(directory: str, key: str = None)```
@@ -58,7 +58,7 @@ workflows will use the primary_analysis method for prechecks of concentration or
 
 As a tool for documentation, the method '```tag_repr()```' is provided. This will return multiple lines of
 comma-separated values (delimiter: ', ' with a space) which summarize the wavelength range parameters and 
-will provide a quick summary of the analysis methods.  If an analysis method has not been configures to have
+will provide a quick summary of the analysis methods.  If an analysis method has not been configured to have
 a '\_\_name\_\_' attribute, then the string "\<Anonymous\>" will be used instead.
 
 The analysis methods are mostly wrappers of methods inherent to the ```Spectrum``` class (aux_devices/spectra.py). 
