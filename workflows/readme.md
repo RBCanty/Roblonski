@@ -37,11 +37,11 @@ This file defines three abstractions which were used throughout the project.
       will return 14.25. This can be called an arbitrary number of times with an arbitrary input
       value.
   - A Calibration also supports the imposition of bounds on the translated value. For example, a
-      floor of 0 would replace and negative predicted actual volume with 0.
+      floor of 0 would replace any negative predicted actual volume with 0.
 
 ### common_macros.py ###
 This file provides some helpful methods which were commonly used throughout the project:
-- ```boot_with_user()```: Prompts user to define prime volume and to specify system liquid level.
+- ```boot_with_user()```: Prompts user to define a priming volume and to specify system liquid level.
 - ```prime()```: Primes the pump with a specified volume of system fluid.
   - If the volume is large (e.g., larger than the volume of the syringe), the operation can
       automatically be broken down into smaller partial priming operations (controlled by the
