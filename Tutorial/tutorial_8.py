@@ -717,8 +717,8 @@ def automatic_study(factory: SVSpecFactory,
     y_data = [i_0 / entry.signal_value for entry in data_entries]
     slr_results = slr(x_data, y_data)
 
-    r2_is_good = (req_threshold is not None) and (slr_results.pearsons_r2 >= req_threshold)
-    intercept_is_good = (intercept_check is not None) and ((1-intercept_check) <= slr_results.intercept <= (1+intercept_check))
+    r2_is_good = (req_threshold is None) or (slr_results.pearsons_r2 >= req_threshold)
+    intercept_is_good = (intercept_check is None) or ((1 - intercept_check) <= slr_results.intercept <= (1 + intercept_check))
     if r2_is_good and intercept_is_good:
         print("Both R2 and y(0) are good!")
         return  # return, so the generator will exit and the calling LOOP will not run

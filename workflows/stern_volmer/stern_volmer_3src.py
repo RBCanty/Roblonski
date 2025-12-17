@@ -15,6 +15,7 @@ from workflows.stern_volmer.naming import SVApellomancer
 from workflows.stern_volmer.stern_volmer_dp import extract_data, determine_base_intensity, save_data_summary
 
 
+# This is called "manual" because the values are manually specified. It is the primary SV study.
 def manual_study(factory: SVSpecFactory,
                  cat_aliquot: int = 10,
                  min_aliquot: int = 7,
@@ -31,6 +32,7 @@ def manual_study(factory: SVSpecFactory,
         yield factory.make(catalyst=(CATALYST, cat_aliquot), quencher=(QUENCH, q), diluent=(DILUENT, available - q))
 
 
+# This is called "automatic" because the platform automatically calculates the values. It is the validation SV study.
 def automatic_study(factory: SVSpecFactory,
                     _calibration: Callable[[float], float],
                     req_threshold: float = 1.0,
@@ -52,8 +54,8 @@ def automatic_study(factory: SVSpecFactory,
     y_data = [i_0 / entry.signal_value for entry in data_entries]
     slr_results = slr(x_data, y_data)
 
-    r2_is_good = (req_threshold is not None) and (slr_results.pearsons_r2 >= req_threshold)
-    intercept_is_good = (intercept_check is not None) and ((1-intercept_check) <= slr_results.intercept <= (1+intercept_check))
+    r2_is_good = (req_threshold is None) or (slr_results.pearsons_r2 >= req_threshold)
+    intercept_is_good = (intercept_check is None) or ((1 - intercept_check) <= slr_results.intercept <= (1 + intercept_check))
     if r2_is_good and intercept_is_good:
         print("Both R2 and y(0) are good!")
         return

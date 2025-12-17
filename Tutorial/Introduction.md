@@ -24,10 +24,11 @@ The eight tutorial files cover the following topics:
 2) Importing python files and type hints
 3) IF statements, FOR loops, and method execution order
 4) *args and **kwargs and Objects
-5) Turning a checklist of opreations into a program (uses the liquid handler)
+5) Turning a checklist of operations into a program (uses the liquid handler)
 6) Reorganizing checklists into methods and basic bookkeeping
 7) Incorporation of the spectrometer
-8) Annotated walktrhough of the the Stern-Volmer code (naming.py, stern_volmer_3src.py, stern_volmer_core.py, and stern_volmer.py)
+8) Annotated walkthrough of the Stern-Volmer code (naming.py, stern_volmer_3src.py, stern_volmer_core.py, and stern_volmer.py)
+9) Annotated walkthrough of adapting the Stern-Volmer code to be more flexible (such as multiple, simultaneous wavelength analysis)
 
 ### Reading a *.py file ###
 
