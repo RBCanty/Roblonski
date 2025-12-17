@@ -3,8 +3,9 @@ The contents of this folder are presented as a tutorial for a user with minimal 
 no programming/Python experience. It will assume that an integrated development 
 environment (IDE; such as PyCharm or Spyder) is being used.
 If you are already familiar with basic coding principles (control flow, basic 
-syntax, variables and function) and can read Python, you can probably skip to the 
-examples.
+syntax, variables and function) and can read Python, you can skip to tutorial #5.
+If you are well-versed in Python, tutorial_8 and the examples in the workflows folder
+would be the place to start.
 
 The tutorial will consist of a series of Python files which can be read and run to 
 observe the behaviors of Python. The tutorial files are intended to be read in-order.
