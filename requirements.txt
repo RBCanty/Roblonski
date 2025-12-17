@@ -1,0 +1,9 @@
+pyserial == 3.5
+nidaqmx == 1.0.1
+numpy == 1.26.4
+seabreeze == 2.9.2
+scipy == 1.14.1
+peakutils == 1.3.5
+pandas == 2.2.3
+pyusb == 1.2.1
+libusb == 1.0.27.post1
