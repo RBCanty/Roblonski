@@ -18,6 +18,17 @@ in this project's code are still accomplishing the same fundamental tasks as the
 check-list-of-operations of the tutorial.
 
 
+### At a glance ###
+The eight tutorial files cover the following topics:
+1) The general structure of a Python file, how to define methods, and the \_\_main\_\_ block
+2) Importing python files and type hints
+3) IF statements, FOR loops, and method execution order
+4) *args and **kwargs and Objects
+5) Turning a checklist of opreations into a program (uses the liquid handler)
+6) Reorganizing checklists into methods and basic bookkeeping
+7) Incorporation of the spectrometer
+8) Annotated walktrhough of the the Stern-Volmer code (naming.py, stern_volmer_3src.py, stern_volmer_core.py, and stern_volmer.py)
+
 ### Reading a *.py file ###
 
 A Python file can be segmented into roughly three section:
@@ -62,4 +73,3 @@ will only jump around if it is told to do so (e.g., IF statements, Loops, and Me
                   and False (boolean) is Falsey. However, None (no value) is Falsey as
                   are empty strings, lists, tuples, and dictionaries. Conversely, a
                   string with text, or lists/tuples/dictionaries with items are Truthy.
-
