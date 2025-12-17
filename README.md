@@ -80,6 +80,14 @@ Deck Layout directory (which is explained in the deck_layout folder's readme)
      into one location.  **common_macros.py** is for mechanical operations and **common_abstractions.py**
      is for handling calibration curves and their effects on serial dilutions.
 
+### Getting Started
+Some values, such as communication ports and directories, will require updating based on your machine. 
+The values which require updates are called out in each subdirectory's ReadMe file.
+
+To test the operation of a new platform the files pilot_arm.py (in user_interface/) and common_macros.py (in workflows/)
+allow you to move the liquid handler's robotic arm and pipette liquids using a simple graphical user interface and
+allow you to sample vials and measure their spectra, respectively.
+
 ### Notes
 Many of these concepts are explained in more detail in the Tutorial. To see example code immediately, view
 the workflows folder.
@@ -96,4 +104,5 @@ the workflows folder.
     will, and embed their workflows into other python libraries (custom or existing).
  3. "Can I use this code to make the platform act like a normal liquid handler?" Yes, see the map_assay.py file in
     workflows folder. This will take in a CSV of vial IDs and component volumes and prepare them as such.
+
 
