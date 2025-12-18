@@ -1,6 +1,7 @@
 ## Overview ##
 These files specify how the liquid handler locates items and positions on the liquid handling bed.
 The files are in hierarchical ordering rather than alphabetic.
+A visualization is provided at the end of the document.
 
 ### Modifications to make before you run ###
 In rack.py, there are three parameters which may need to be adjusted depending on your setup:
@@ -210,7 +211,7 @@ have its value decremented by the volume aspirated. This is intended to provide 
 platform can be aware if it has run out of system fluid and stop a long campaign before running dry.
 
 **Placeables**\
-This pythong file also defines the Placeable abstraction. Any location on the liquid handler bed is represented
+This python file also defines the Placeable abstraction. Any location on the liquid handler bed is represented
 as a Placeable object. (Locatable would have been a good alternate name for this). All Placeable objects
 can provide the XY or Z coordinates of their center, their access point, their transfer point, and their edge.
 (These are often the locations provided by a Rack object). There are subtypes of Placeable: A Coordinate
@@ -230,3 +231,20 @@ the platform thinks are currently present.  The ~160 lines of code are for the w
 as something like 'Rack 1 is using vials A1:B4, C1, and E2:E4'". The name is taken from the pprint python 
 module which prints objects like dictionaries in a much prettier (pretty print --> pprint) format than
 normal python.
+
+## Visual ##
+![A four-panel visualization of bed, rack, and vial measurements along with a schematic of a deck with its associated file structure](/deck_layout/Supplemental%20Deck%20Figure.png)
+
+Panel A: When the arm is homed and at the back left of the platform, the needle tip will be located at XYZ coordinate (0, 0, 125). 
+When defininig the Bed's bounds, a slight restrition was applied to avoid issues with the motors at the extremes. 118 was chosed as
+max Z height as this is the height were the needle is flush with its support--and so further retraction provides no benefit to clearances
+and may risk contaminating the support.
+
+Panel B: A typical rack with key measurements annotated. The Origin is the XY coordinate (based on the entire bed) of the A1 location. 
+The exampled rack has 2 columnds and 6 rows.
+
+Panel C: A typical vial with key measurements annotated. The vial is viewed in a vertically aligned cross-section. The Volumetric measurements were not used in this work. 
+
+Panel D: A typical bed layout and its corresponding file structure. Note that the three rack names (colored blue, red, and green) must match their associated vials folder.
+Within each folder, only the locations with an associated vial file will be accessible. For example, rack 1 is a 3x6 rack (circles) but only vials A1, A2, and C1 (not faded cirlces) can be accessed by
+the platform when this deck is loaded. Racks 2 and 3 are examples of single-vial racks and can be used to represent a free-standing vial on the deck.
