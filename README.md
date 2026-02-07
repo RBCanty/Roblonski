@@ -1,8 +1,8 @@
-# Neptune
+# Roblonski
 
 A Python-based control system for photochemical experiments performed on a Gilson liquid
-handler.  While Gilson's trident is the alchemical symbol for Essence, we saw the 
-opportunity to connect another trident associated with handling liquids: ♆
+handler.  The liquid handler backend was nicknamed Neptune: While Gilson's trident is the alchemical symbol for Essence, we saw the 
+opportunity to connect another trident associated with handling liquids (♆).
 
 ### Objectives
 
@@ -104,5 +104,6 @@ the workflows folder.
     will, and embed their workflows into other python libraries (custom or existing).
  3. "Can I use this code to make the platform act like a normal liquid handler?" Yes, see the map_assay.py file in
     workflows folder. This will take in a CSV of vial IDs and component volumes and prepare them as such.
+
 
 
