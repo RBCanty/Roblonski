@@ -19,7 +19,7 @@ check-list-of-operations of the tutorial.
 
 
 ### At a glance ###
-The eight tutorial files cover the following topics:
+The tutorial files cover the following topics:
 1) The general structure of a Python file, how to define methods, and the \_\_main\_\_ block
 2) Importing python files and type hints
 3) IF statements, FOR loops, and method execution order
